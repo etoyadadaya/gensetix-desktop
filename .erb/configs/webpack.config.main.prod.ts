@@ -1,5 +1,5 @@
 /**
- * Webpack config for production electron main process
+ * Webpack config for production electron profile process
  */
 
 import path from 'path';
@@ -20,10 +20,10 @@ const configuration: webpack.Configuration = {
 
   mode: 'production',
 
-  target: 'electron-main',
+  target: 'electron-profile',
 
   entry: {
-    main: path.join(webpackPaths.srcMainPath, 'main.ts'),
+    main: path.join(webpackPaths.srcMainPath, 'profile.ts'),
     preload: path.join(webpackPaths.srcMainPath, 'preload.ts'),
   },
 
@@ -65,7 +65,7 @@ const configuration: webpack.Configuration = {
     }),
 
     new webpack.DefinePlugin({
-      'process.type': '"main"',
+      'process.type': '"profile"',
     }),
   ],
 

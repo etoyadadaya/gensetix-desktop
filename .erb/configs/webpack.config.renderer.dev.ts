@@ -189,8 +189,8 @@ const configuration: webpack.Configuration = {
         .on('close', (code: number) => process.exit(code!))
         .on('error', (spawnError) => console.error(spawnError));
 
-      console.log('Starting Main Process...');
-      let args = ['run', 'start:main'];
+      console.log('Starting Profile Process...');
+      let args = ['run', 'start:profile'];
       if (process.env.MAIN_ARGS) {
         args = args.concat(
           ['--', ...process.env.MAIN_ARGS.matchAll(/"[^"]+"|[^\s"]+/g)].flat()
