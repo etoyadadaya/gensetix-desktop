@@ -1,4 +1,4 @@
-# Electron React TypeScript
+# Electron React TypeScript and maybe more
 
 start app: yarn start
 
