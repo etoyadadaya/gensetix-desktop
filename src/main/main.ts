@@ -1,10 +1,10 @@
 /* eslint global-require: off, no-console: off, promise/always-return: off */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain } from 'electron';
-import { autoUpdater } from 'electron-updater';
+import {app, BrowserWindow, ipcMain, shell} from 'electron';
+import {autoUpdater} from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
-import { resolveHtmlPath } from './util';
+import {resolveHtmlPath} from './util';
 
 class AppUpdater {
   constructor() {
@@ -61,14 +61,15 @@ const createWindow = async () => {
   };
 
   mainWindow = new BrowserWindow({
-    show: false,
+    show: true,
+    frame: true,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
-        : path.join(__dirname, '../../.erb/dll/preload.js'),
+        : path.join(__dirname, '../../.gensetix/dll/preload.js'),
     },
   });
 
@@ -95,7 +96,7 @@ const createWindow = async () => {
   // Open urls in the user's browser
   mainWindow.webContents.setWindowOpenHandler((edata) => {
     shell.openExternal(edata.url);
-    return { action: 'deny' };
+    return {action: 'deny'};
   });
 
   // Remove this if your app does not use auto updates
