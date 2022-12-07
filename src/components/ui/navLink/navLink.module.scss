@@ -1,0 +1,13 @@
+.link {
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: rgba(255,255,255,0.4);
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+
+  &.active {
+    color: rgba(255,255,255, 1);
+  }
+}

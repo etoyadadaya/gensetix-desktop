@@ -13,7 +13,7 @@ export const Hello = () => {
         <div className={styles.wrap}>
           <Input placeholder="Enter your email"/>
           <Input placeholder="Enter your password"/>
-          <Button onClick={() => navigate("/profile")} variant="primary">Login</Button>
+          <Button onClick={() => navigate("/profile")} variant="profile">Login</Button>
         </div>
       </div>
     </div>

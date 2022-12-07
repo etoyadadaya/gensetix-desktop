@@ -1,4 +1,142 @@
+body {
+  overflow-y: hidden;
+  background: #1E1E1E;
+}
+
 .container {
+  display: flex;
+  position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.left {
+  padding: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 100vh;
+  background: #1E1E1E;
+}
+
+.account {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.accountLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.newsLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.server {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.serverLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.serverTitle {
+  font-size: 13px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.settingsLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.settingsTitle {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 100vh;
+}
+
+.header {
+  height: 100px;
+  background: #1E1E1E;
+  padding-left: 25px;
+}
+
+.navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.content {
+  height: 100%;
+  background-image: url("../../assets/back.webp");
+  background-size: cover;
+}
+
+.footer {
+  position: relative;
+  padding-left: 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 100px;
+  background: #1E1E1E;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.release {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.version {
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.button {
+  color: #FFFFFF;
+  width: 240px;
+  height: 50px;
+  background: #128947;
+  position: absolute;
+  top: -25%;
+  left: 40%;
 }

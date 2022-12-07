@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/Background.jpg");
+  background-image: url("../../assets/Background.webp");
   background-size: cover;
 }
 
@@ -16,8 +16,8 @@
   align-items: center;
   width: 400px;
   height: 350px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(122, 122, 122, 0.5);
+  background: rgba(0, 0, 0, .1);
+  border: 1px solid rgba(122, 122, 122, 0.2);
   backdrop-filter: blur(2.5px);
   border-radius: 12px;
 }

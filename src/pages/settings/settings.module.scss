@@ -1,0 +1,41 @@
+h1, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrap {
+  display: flex;
+  padding: 0 100px;
+  gap: 10px;
+}
+
+.left {
+  width: 25%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  background: rgba(85, 66, 116, 0.1);
+  border-radius: 16px;
+}
+
+.menu {
+  width: 405px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.right {
+  width: 75%;
+  padding: 20px;
+  background: rgba(85, 66, 116, 0.1);
+  border-radius: 16px;
+}
+
