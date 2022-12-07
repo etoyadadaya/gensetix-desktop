@@ -1,0 +1,30 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.name {
+  font-size: 80px;
+  z-index: 999;
+  text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.subName {
+  font-size: 150px;
+  z-index: 999;
+  text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}

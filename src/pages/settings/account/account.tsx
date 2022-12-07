@@ -9,8 +9,8 @@ const Account: FC = () => {
         <div className={styles.header}>
           <p>My account</p>
           <div className={styles.user}>
-            <div className={styles.bg}></div>
-            <div className={styles.avatar}></div>
+            <div className={styles.bg} />
+            <div className={styles.avatar} />
             <div className={styles.userInfo}>
               <h3 className={styles.client}>Client</h3>
               <h1 className={styles.nameWrap}>

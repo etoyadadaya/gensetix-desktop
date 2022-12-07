@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import styles from "./orders.module.scss";
 
 const Orders: FC = () => {
   return (

@@ -6,11 +6,8 @@ interface Input extends HTMLProps<HTMLInputElement> {
   variant?: "primary";
 }
 
-export const Input: FC<Input> = ({placeholder, children, variant}) => (
-    <input
-      className={styles.primary}
-      placeholder={placeholder}
-    >
-      {children}
-    </input>
+export const Input: FC<Input> = ({ placeholder, children, variant }) => (
+  <input className={styles.primary} placeholder={placeholder}>
+    {children}
+  </input>
 );
