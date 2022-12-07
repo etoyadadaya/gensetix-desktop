@@ -5,10 +5,10 @@ import Profile from "../pages/profile/profile";
 import Settings from "../pages/settings/settings";
 import Account from "../pages/settings/account/account";
 import Orders from "../pages/settings/orders/orders";
-import Play from "../pages/profile/play/play";
-import Installations from "../pages/profile/installations/installations";
-import Skins from "../pages/profile/skins/skins";
-import Patches from "../pages/profile/patches/patches";
+import Hitech from "../pages/profile/hitech/hitech";
+import Nanotech from "../pages/profile/nanotech/nanotech";
+import Classic from "../pages/profile/classic/classic";
+import Magic from "../pages/profile/magic/magic";
 
 export default function App() {
   return (
@@ -16,10 +16,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Hello/>}/>
         <Route path="profile" element={<Profile/>}>
-          <Route path="play" element={<Play/>}/>
-          <Route path="installations" element={<Installations/>}/>
-          <Route path="skins" element={<Skins/>}/>
-          <Route path="patches" element={<Patches/>}/>
+          <Route path="hitech" element={<Hitech/>}/>
+          <Route path="nanotech" element={<Nanotech/>}/>
+          <Route path="classic" element={<Classic/>}/>
+          <Route path="magic" element={<Magic/>}/>
           <Route path="settings" element={<Settings/>}/>
         </Route>
         <Route path="settings" element={<Settings/>}>

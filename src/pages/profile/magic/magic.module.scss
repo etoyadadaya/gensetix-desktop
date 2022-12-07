@@ -1,0 +1,42 @@
+.container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-image: url("../../../assets/magic.jpg");
+  background-size: cover;
+  box-shadow: inset 10px -250px 100px 30px black;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.name {
+  font-size: 80px;
+  z-index: 999;
+  text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.subName {
+  font-size: 150px;
+  z-index: 999;
+  text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
