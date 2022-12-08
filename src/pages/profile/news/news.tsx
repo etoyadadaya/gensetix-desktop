@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./news.module.scss";
 
-const News: FC = () => {
+export const News: FC = () => {
   return (
     <div>
       <div className={styles.box}>
@@ -14,5 +14,3 @@ const News: FC = () => {
     </div>
   );
 };
-
-export default News;

@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./classic.module.scss";
-import { Button } from "../../../components/ui/button/button";
+import {Button} from "../../../components/ui";
 
-const Classic: FC = () => {
+export const Classic: FC = () => {
   return (
     <>
       <div className={styles.container} />
@@ -17,5 +17,3 @@ const Classic: FC = () => {
     </>
   );
 };
-
-export default Classic;

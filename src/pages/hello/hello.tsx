@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import styles from "./hello.module.scss";
-import { Input } from "../../components/ui/input/input";
-import { Button } from "../../components/ui/button/button";
+import {Button, Input} from "../../components/ui";
 
 export const Hello = () => {
   const navigate = useNavigate();

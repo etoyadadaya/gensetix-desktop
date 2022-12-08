@@ -1,12 +1,8 @@
-import React, { FC, HTMLProps } from "react";
+import React, {FC} from "react";
 import styles from "./input.module.scss";
+import {IInput} from "./input.types";
 
-interface Input extends HTMLProps<HTMLInputElement> {
-  placeholder: string;
-  variant?: "primary";
-}
-
-export const Input: FC<Input> = ({ placeholder, children, variant }) => (
+export const Input: FC<IInput> = ({ placeholder, children, variant }) => (
   <input className={styles.primary} placeholder={placeholder}>
     {children}
   </input>

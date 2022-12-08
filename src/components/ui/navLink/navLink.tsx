@@ -1,13 +1,10 @@
-import React, { FC, HTMLProps } from "react";
-import { NavLink as Ref } from "react-router-dom";
+import React, {FC} from "react";
+import {NavLink as Ref} from "react-router-dom";
 import clsx from "clsx";
 import styles from "./navLink.module.scss";
+import {INavLink} from "./navLink.types";
 
-interface INavLink extends HTMLProps<HTMLElement> {
-  to: string;
-}
-
-const NavLink: FC<INavLink> = ({ to, children, className, style }) => {
+export const NavLink: FC<INavLink> = ({ to, children, className, style }) => {
   return (
     <Ref
       to={to}
@@ -22,5 +19,3 @@ const NavLink: FC<INavLink> = ({ to, children, className, style }) => {
     </Ref>
   );
 };
-
-export default NavLink;

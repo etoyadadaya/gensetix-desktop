@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./orders.module.scss";
 
-const Orders: FC = () => {
+export const Orders: FC = () => {
   return (
     <>
       <div>
@@ -11,5 +11,3 @@ const Orders: FC = () => {
     </>
   );
 };
-
-export default Orders;

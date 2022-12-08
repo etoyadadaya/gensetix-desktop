@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import { Outlet } from "react-router-dom";
+import React, {FC} from "react";
+import {Outlet} from "react-router-dom";
 import styles from "./profile.module.scss";
-import Wheel from "../../assets/settings.png";
-import NavLink from "../../components/ui/navLink/navLink";
+import Wheel from "../../../assets/settings.png";
+import {NavLink} from "../../../components/ui";
 
-const Profile: FC = () => {
+export const Profile: FC = () => {
   return (
     <>
       <div className={styles.container}>
@@ -37,5 +37,3 @@ const Profile: FC = () => {
     </>
   );
 };
-
-export default Profile;

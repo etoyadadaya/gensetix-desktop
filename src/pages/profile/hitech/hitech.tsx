@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./hitech.module.scss";
-import { Button } from "../../../components/ui/button/button";
+import {Button} from "../../../components/ui";
 
-const Hitech: FC = () => {
+export const Hitech: FC = () => {
   return (
     <>
       <div className={styles.container} />
@@ -17,5 +17,3 @@ const Hitech: FC = () => {
     </>
   );
 };
-
-export default Hitech;

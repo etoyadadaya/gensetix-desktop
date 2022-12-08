@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./account.module.scss";
-import { Button } from "../../../components/ui/button/button";
+import {Button} from "../../../components/ui";
 
-const Account: FC = () => {
+export const Account: FC = () => {
   return (
     <>
       <div className={styles.account}>
@@ -47,5 +47,3 @@ const Account: FC = () => {
     </>
   );
 };
-
-export default Account;

@@ -1,10 +1,9 @@
-import React, { FC } from "react";
-import { Outlet } from "react-router-dom";
+import React, {FC} from "react";
+import {Outlet} from "react-router-dom";
 import styles from "./settings.module.scss";
-import Header from "../../components/layout/header/header";
-import NavLink from "../../components/ui/navLink/navLink";
+import {NavLink} from "../../../components/ui";
 
-const Settings: FC = () => {
+export const Settings: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrap}>
@@ -21,5 +20,3 @@ const Settings: FC = () => {
     </div>
   );
 };
-
-export default Settings;

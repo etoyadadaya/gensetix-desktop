@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./nanotech.module.scss";
-import { Button } from "../../../components/ui/button/button";
+import {Button} from "../../../components/ui";
 
-const Nanotech: FC = () => {
+export const Nanotech: FC = () => {
   return (
     <>
       <div className={styles.container} />
@@ -17,5 +17,3 @@ const Nanotech: FC = () => {
     </>
   );
 };
-
-export default Nanotech;

@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 import styles from "./magic.module.scss";
-import { Button } from "../../../components/ui/button/button";
+import {Button} from "../../../components/ui";
 
-const Magic: FC = () => {
+export const Magic: FC = () => {
   return (
     <>
       <div className={styles.container} />
@@ -17,5 +17,3 @@ const Magic: FC = () => {
     </>
   );
 };
-
-export default Magic;
