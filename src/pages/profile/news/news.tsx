@@ -5,7 +5,11 @@ const News: FC = () => {
   return (
     <div>
       <div className={styles.box}>
-        <p className={styles.name}>ABOBA</p>
+        <div className={styles.wrap}></div>
+        <div className={styles.content}>
+          <p className={styles.name}>PATCH 1</p>
+          <p className={styles.subName}>GENSETIX HOT FIX</p>
+        </div>
       </div>
     </div>
   );

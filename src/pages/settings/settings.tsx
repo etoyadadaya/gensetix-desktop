@@ -7,7 +7,6 @@ import NavLink from "../../components/ui/navLink/navLink";
 const Settings: FC = () => {
   return (
     <div className={styles.container}>
-      <Header />
       <div className={styles.wrap}>
         <div className={styles.left}>
           <div className={styles.menu}>

@@ -7,7 +7,7 @@ const Account: FC = () => {
     <>
       <div className={styles.account}>
         <div className={styles.header}>
-          <p>My account</p>
+          <p className={styles.headerTitle}>My account</p>
           <div className={styles.user}>
             <div className={styles.bg} />
             <div className={styles.avatar} />
@@ -24,21 +24,21 @@ const Account: FC = () => {
       <div className={styles.details}>
         <p className={styles.detailsTitle}>Details</p>
         <div className={styles.detailsInfo}>
-          <p className={styles.detailsTitle}>Username</p>
+          <p className={styles.detailsText}>Username</p>
           <Button variant="details">Change user name</Button>
         </div>
         <div className={styles.detailsInfo}>
-          <p className={styles.detailsTitle}>14/14/2077</p>
-          <Button variant="details">Change date of birth</Button>
+          <p className={styles.detailsText}>Your password</p>
+          <Button variant="details">Change password</Button>
         </div>
         <div className={styles.detailsInfo}>
-          <p className={styles.detailsTitle}>fuc********tch@gmail.com</p>
+          <p className={styles.detailsText}>Email@gmail.com</p>
           <Button variant="details">Change email address</Button>
         </div>
       </div>
       <div className={styles.TFA}>
         <p className={styles.TFATitle}>Two-factor authentication</p>
-        <Button variant="profile">Enable TFA</Button>
+        <Button variant="profile">Enable 2FA</Button>
       </div>
       <div className={styles.buttons}>
         <Button variant="profile">Log out</Button>

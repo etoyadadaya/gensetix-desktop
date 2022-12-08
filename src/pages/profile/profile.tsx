@@ -3,14 +3,13 @@ import { Outlet } from "react-router-dom";
 import styles from "./profile.module.scss";
 import Wheel from "../../assets/settings.png";
 import NavLink from "../../components/ui/navLink/navLink";
-import { Button } from "../../components/ui/button/button";
 
 const Profile: FC = () => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.left}>
-          <NavLink to="/settings">
+          <NavLink to="/settings/account">
             <img className={styles.settings} src={Wheel} alt="" />
           </NavLink>
           <NavLink to="/profile/news" className={styles.page}>

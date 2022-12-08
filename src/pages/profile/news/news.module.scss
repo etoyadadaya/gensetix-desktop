@@ -1,6 +1,32 @@
 .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  margin-left: 10%;
+  height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  z-index: 666;
+  border: 1px solid rgba(255,255,255, .2);
+  border-radius: 12px;
+}
+
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1E1E1E;
+  z-index: 666;
+  opacity: 0.8;
+  border-radius: 12px;
+}
+
+.content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
   z-index: 999;
 }
 
@@ -15,16 +41,11 @@
 }
 
 .subName {
-  font-size: 150px;
+  font-size: 30px;
   z-index: 999;
   text-shadow:
     -1px 0px 0px black,
     1px 0px 0px black,
     0px -1px 0px black,
     0px 1px 0px black;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
 }

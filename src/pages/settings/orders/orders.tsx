@@ -1,11 +1,12 @@
 import React, { FC } from "react";
+import styles from "./orders.module.scss";
 
 const Orders: FC = () => {
   return (
     <>
       <div>
-        <h2>Transaction history</h2>
-        <p>Here is a list of your transactions over the last five years.</p>
+        <h2 className={styles.Title}>Transaction history</h2>
+        <p>Here is a list of your past transactions.</p>
       </div>
     </>
   );

@@ -1,11 +1,16 @@
 .account {
   padding: 0 0 20px 0;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid grey;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.headerTitle {
+  font-size: 24px;
 }
 
 .user {
@@ -16,7 +21,7 @@
   width: 95%;
   border-radius: 12px;
   border: 1px solid black;
-  height: 185px;
+  height: 125px;
   background-position: center;
   box-shadow: inset 500px 0 90px -7px rgba(0,0,0,0.4);
 }
@@ -54,12 +59,19 @@
 }
 
 .details {
-  padding-top: 10px;
-  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
 }
 
 .detailsTitle {
   font-size: 24px;
+}
+
+.detailsText {
+  font-size: 18px;
 }
 
 .detailsInfo {
@@ -67,13 +79,12 @@
   align-items: center;
 }
 
-.detailsTitle {
-  font-size: 18px;
-}
-
 .TFA {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 0 0 20px 0 ;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid grey;
 }
 
 .TFATitle {
